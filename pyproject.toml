@@ -1,0 +1,19 @@
+[project]
+name = "langgraph-memory-chat"
+version = "0.1.0"
+description = "Chat agent with short- and long-term memory, human-in-the-loop approval and a forget button (LangGraph, Streamlit, SQLite)"
+readme = "README.md"
+authors = [
+    { name = "junesdream" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.9",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.20",
+    "langgraph-checkpoint-sqlite>=3.1.3",
+    "streamlit>=1.67.0",
+]
+
+[tool.uv]
+package = false
